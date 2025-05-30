@@ -1,6 +1,26 @@
-This was written by myself some time ago on a web hosting venture (Azoria)
+# PeakFinance Price Bot Overview
 
-I have since closed the organization down on github.
+This is a Node.js-based Discord bot built to fetch and display the live price of the PEAK token from external APIs. It posts updates to a specific Discord channel on a regular interval.
+
+## Main Structure
+
+### `index.js`
+Main application file that initializes the bot, connects to Discord, loads the environment configuration, and triggers periodic price updates.
+
+### `price-checker.js`
+Handles the logic for fetching the token price from an external API and formatting a Discord message embed.
+
+## Configuration
+
+### `.env`
+Contains all environment variables, including the bot token, target channel ID, API URL, and refresh interval.
+
+## Dependencies
+
+From `package.json`:
+- `discord.js` – For Discord API interaction.
+- `dotenv` – For handling environment variables.
+- `node-fetch` – For making API calls to fetch token data.
 
 ---
 
